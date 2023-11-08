@@ -1,0 +1,44 @@
+#include "DIO.h"
+#include "PORT.h"
+#include "SevSeg.h"
+#include "KpadCfg.h"
+Dio_PinConfig PinConfig[PINCOUNT]=
+{
+	//Port ===(A)===
+	{Dio_A0,OUTPUT},	//PORTA0
+	{Dio_A1,OUTPUT},	//PORTA1
+	{SevSeg_Select2,OUTPUT},	//PORTA2
+	{SevSeg_Select1,OUTPUT},	//PORTA3
+	{Dio_A4,OUTPUT},	//PORTA4
+	{Dio_A5,OUTPUT},	//PORTA5
+	{Dio_A6,OUTPUT},	//PORTA6
+	{Dio_A7,OUTPUT},	//PORTA7
+	//Port ===(B)===
+	{SevSeg_Data0,OUTPUT},	//PORTB0
+	{SevSeg_Data1,OUTPUT},	//PORTB1
+	{SevSeg_Data2,OUTPUT},	//PORTB2
+	{Dio_B3,OUTPUT},	//PORTB3
+	{SevSeg_Data3,OUTPUT},	//PORTB4
+	{SevSeg_Select3,OUTPUT},	//PORTB5
+	{SevSeg_Select4,OUTPUT},	//PORTB6
+	{Dio_B7,OUTPUT},	//PORTB7
+	//Port ===(C)===
+	{Dio_C0,OUTPUT},	//PORTC0
+	{Dio_C1,OUTPUT},	//PORTC1
+	{KP_R3,OUTPUT},	//PORTC2
+	{KP_R2,OUTPUT},	//PORTC3
+	{KP_R1,OUTPUT},	//PORTC4
+	{KP_R0,OUTPUT},	//PORTC5
+	{Dio_C6,OUTPUT},	//PORTC6
+	{Dio_C7,OUTPUT},	//PORTC7
+	//Port ===(D)===
+	{Dio_D0,OUTPUT},	//PORTD0
+	{Dio_D1,OUTPUT},	//PORTD1
+	{Dio_D2,OUTPUT},	//PORTD2
+	{KP_C3,INPUT},	//PORTD3
+	{Dio_D4,OUTPUT},	//PORTD4
+	{KP_C2,INPUT},	//PORTD5
+	{KP_C1,INPUT},	//PORTD6
+	{KP_C0,INPUT},	//PORTD7
+	{Dio_PinMax,Dio_PortMax},
+};
